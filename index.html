@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img class="invert" src="close.svg" alt="">
+            </div>
+            <div class="home bg-grey rounded m-1 p-1">
+                <div class="logo"><img style="width: 45px;" class="invert" src="logo.svg" alt="logo"></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m-1 p-1">
+                <div class="heading">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal"><span>legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy-policy"><span>Privacy Policy</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/cookies-policies"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="right bg-grey rounded">
+            <div class="header rounded">
+                <div class="nav">
+                    <div class="hamburgerContainer">
+                        <img class="invert hamburger" src="hamburger.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg"
+                            data-src="https://cdn.hugeicons.com/icons/arrow-left-01-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000"
+                            data-darkreader-inline-color=""
+                            style="--darkreader-inline-color: var(--darkreader-text-000000, #e8e6e3);">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                data-darkreader-inline-stroke=""
+                                style="--darkreader-inline-stroke: var(--darkreader-text-000000, #e8e6e3);"></path>
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            class="injected-svg"
+                            data-src="https://cdn.hugeicons.com/icons/arrow-right-01-stroke-rounded.svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000"
+                            data-darkreader-inline-color=""
+                            style="--darkreader-inline-color: var(--darkreader-text-000000, #e8e6e3);">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                data-darkreader-inline-stroke=""
+                                style="--darkreader-inline-stroke: var(--darkreader-text-000000, #e8e6e3);"></path>
+                        </svg>
+                    </div>
+
+                </div>
+                <div class="button">
+                    <button class="signupBTN">Sign up</button>
+                    <button class="loginBTN">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="https://i.scdn.co/image/ab67616d00001e0295c503f1de8a9c978dca2209" alt="Jhol">
+                        <h2>Jhol-Acoustic</h2>
+                        <p>Maanu, Annural Khalid, Abdullah Siddiqui</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/TERA CHEHRA.png" alt="Tera Chehra">
+                        <h2>Tera Chehra</h2>
+                        <p>Himesh Reshammiya, Arijit Singh</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/ESPRESSO.png" alt="Espresso">
+                        <h2>Espresso</h2>
+                        <p>Sabrina Carpenter</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/PRETTY LITTLE BABY.png" alt="Pretty Little Baby">
+                        <h2>Pretty Little Baby</h2>
+                        <p>Connie Francis</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/RAANJHAN.png" alt="Raanjhan">
+                        <h2>Raanjhan</h2>
+                        <p>Shaheer Sheikh  Parampara Tandon</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/FINDING HER .png" alt="Finding Her">
+                        <h2>Finding Her</h2>
+                        <p>Kushagra  Vanshika Kashyap  Bharat</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/TERI  YAAD.png" alt="Teri Yaad">
+                        <h2>Teri Yaad</h2>
+                        <p>Aditya Rikhari</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/FAASLE.png" alt="Faasle">
+                        <h2>Faasle</h2>
+                        <p>Aditya Rikhari</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/PAARO.png" alt="Paaro">
+                        <h2>Paaro</h2>
+                        <p>Aditya Rikhari</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/SAMJHO NA .png" alt="Samjho Na">
+                        <h2>Samjho Na</h2>
+                        <p>Aditya Rikhari</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/PAL PAL.png" alt="Pal Pal">
+                        <h2>Pal Pal</h2>
+                        <p>Afusic</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/BAARISHEIN.png" alt="Baarishein">
+                        <h2>Baarishein</h2>
+                        <p>Anuv Jain</p>
+                    </div>
+                    <div class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/APA FER MILAANGE.png" alt="Apa Fer Milaange">
+                        <h2>Apa Fer Milaange</h2>
+                        <p>Savi Kahlon</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/DOST BANKE.png" alt="Dost Banke">
+                        <h2>Dost Banke</h2>
+                        <p>Rahat Fateh Ali Khan X Gurnazar  Priyanka Chahar Choudhary</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/KABHI KABHI.png" alt="Kabhi Kabhi">
+                        <h2>Kabhi Kabhi</h2>
+                        <p>AUR - Ahad Khan, Usama Ali, Raffey Anwar </p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/KAHANI SUNO.png" alt="Kahani Suno">
+                        <h2>Kahani Suno</h2>
+                        <p>Kaifi Khalid</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/LAAPATA.png" alt="Laapata">
+                        <h2>Laapata</h2>
+                        <p>Arshman Naeem</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/PHIR BHI TUMKO CHAHUNGA .png" alt="Fir Bhi Tumko Chaahunga">
+                        <h2>Phir Bhi Tumko Chaahunga</h2>
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/TU HAI KAHAN.png" alt="Tu Hai Kahan">
+                        <h2>Tu Hai Kahan</h2>
+                        <p>AUR - Ahad Khan, Usama Ali, Raffey Anwar </p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/DILLAGI.png" alt="Dillagi">
+                        <h2>Tumhe Dillagi</h2>
+                        <p>Rahat Fateh Ali Khan</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/UNTIL I FOUND YOU.png" alt="Until I Found You">
+                        <h2>Until I Found You</h2>
+                        <p>Stephen Sanchez</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/BLUE.png" alt="Blue">
+                        <h2>Blue</h2>
+                        <p>Yung Kai</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/DIE WITH A SMILE.png" alt="Die With A Smile">
+                        <h2>Die With A Smile</h2>
+                        <p>Lady Gaga, Bruno Mars</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/AJEEB DAASTAN HAI YE.png" alt="Ajeeb Daastan Hai Ye">
+                        <h2>Ajeeb Daastan Hai Ye</h2>
+                        <p>Lata Mangeshkar</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/JO TUM MERE HO.png" alt="Jo Tum Mere Ho">
+                        <h2>Jo Tum Mere Ho</h2>
+                        <p>Anuv Jain</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/BAAT.png" alt="Baat">
+                        <h2>Baat (Meem Se Mohabbat)</h2>
+                        <p>Asim Azhar </p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/DEEWANE HUM NHI HOTE .png" alt="Deewane Hum Nahi Hote">
+                        <h2>Deewane Hum Nahi Hote</h2>
+                        <p>Aditya Yadav</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/DEEWANI MASTANI.png" alt="Deewani Mastani">
+                        <h2>Deewani Mastani </h2>
+                        <p>Bajirao Mastani</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/MALANG.png" alt="Malang">
+                        <h2>Malang</h2>
+                        <p>Aditya Roy Kapur, Disha Patani, Anil K, Kunal K</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/HUMARI ADHURI KAHANI .png" alt="Humari Adhuri Kahani">
+                        <h2>Humari Adhuri Kahani</h2>
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/NAHI MILTA.png" alt="Nahi Milta">
+                        <h2>Nahi Milta</h2>
+                        <p>Asfar Hussain</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/TERI DEEWANI.png" alt="Teri Deewani">
+                        <h2>Teri Deewani</h2>
+                        <p>Kailash Kher</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/MERA YAAR.png" alt="Mera Yaar">
+                        <h2>Mera Yaar</h2>
+                        <p>Farhan Akhtar, Sonam KapoorJaved Bashir</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/TERI MERI KAHANI.png" alt="Teri Meri Kahani">
+                        <h2>Teri Meri Kahani</h2>
+                        <p>Arijit Singh</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/TUM HI HO.png" alt="Tum Hi Ho">
+                        <h2>Tum Hi Ho</h2>
+                        <p>Ashiqui 2</p>
+                    </div>
+                    <div class="card">
+                          <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"
+                                role="img">
+                                <!-- Green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1ed760" />
+
+                                <!-- Centered black play icon -->
+                                <path d="M26 20L44 32L26 44V20Z" fill="#000000" />
+                            </svg>
+                        </div>
+                        <img src="SongsPhoto/YE TUNE KYA KIAY.png" alt="Ye Tune Kya Kiya">
+                        <h2>Ye Tune Kya Kiya</h2>
+                        <p>Javed Bashir</p>
+                    </div>
+                    <div class="playbar">
+                        <div class="seekbar">
+                            <div class="circle"></div>
+                        </div>
+                        <div class="aboveBar">
+                            <div class="songInfo">
+                            </div>
+                            <div class="songButtons">
+                                <img style="width:33px" id="previous" src="prev.svg" alt="previous song">
+                                <img style="width:33px" id="play" src="play.svg" alt="play button">
+                                <img style="width:33px" id="next" src="next.svg" alt="next song">
+                            </div>
+                            <div class="timeVol">
+                                <div class="songTime">
+                                </div>
+                                <div class="volume">
+                                    <img width="24px" src="volume.svg" alt="">
+                                    <div style="color: green;" class="range">
+                                        <input type="range" name="volume" id="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
